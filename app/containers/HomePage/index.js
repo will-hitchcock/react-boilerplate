@@ -10,16 +10,11 @@
  */
 
 import React from 'react'
-import Container from 'components/Container'
-import ButtonLink from 'components/ButtonLink'
 
 export default class HomePage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
   render() {
     return (
-      <Container>
-        <ButtonLink href="/grid">Grid Demo</ButtonLink>
-        <ButtonLink href="/example">Demo</ButtonLink>
-      </Container>
+      <div></div>
     )
   }
 }
