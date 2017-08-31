@@ -34,22 +34,6 @@ export default function createRoutes(store) {
         importModules.catch(errorLoading)
       }
     }, {
-      path: 'example',
-      name: 'examplePage',
-      getComponent(location, cb) {
-        import('containers/ExamplePage')
-          .then(loadModule(cb))
-          .catch(errorLoading)
-      }
-    }, {
-      path: 'grid',
-      name: 'gridDemo',
-      getComponent(location, cb) {
-        import('containers/GridDemo')
-          .then(loadModule(cb))
-          .catch(errorLoading)
-      }
-    }, {
       path: '*',
       name: 'notfound',
       getComponent(nextState, cb) {
