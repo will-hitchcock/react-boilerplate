@@ -195,6 +195,12 @@
     ]
   },
   "jest": {
+    "setupFiles": [
+      "./test/setup.js"
+    ],
+    "snapshotSerializers": [
+      "<rootDir>/node_modules/enzyme-to-json/serializer"
+    ],
     "collectCoverageFrom": [
       "app/**/*.{js,jsx}",
       "!app/**/*.test.{js,jsx}",
@@ -273,6 +279,7 @@
     "coveralls": "2.11.15",
     "css-loader": "0.26.1",
     "enzyme": "2.6.0",
+    "enzyme-to-json": "^3.3.4",
     "eslint": "3.11.1",
     "eslint-config-airbnb": "13.0.0",
     "eslint-config-airbnb-base": "10.0.1",
